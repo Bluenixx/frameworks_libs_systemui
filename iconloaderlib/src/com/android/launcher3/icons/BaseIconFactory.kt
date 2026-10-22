@@ -407,8 +407,7 @@ constructor(
 
         /** Sets the background color used for wrapped adaptive icon */
         fun setWrapperBackgroundColor(color: Int) = apply {
-            wrapperBackgroundColor =
-                if (Color.alpha(color) < 255) DEFAULT_WRAPPER_BACKGROUND else color
+            wrapperBackgroundColor = color
         }
 
         /** Sets if hardware bitmap should be generated as the output */
